@@ -4,9 +4,12 @@
   "outputDirectory": "frontend/dist",
   "rewrites": [
     {
+      "source": "/api/:match*",
+      "destination": "https://online-appointment-system-bg5w.onrender.com/api/:match*"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
 }
-
