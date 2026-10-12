@@ -13,6 +13,7 @@ replay_pid*
 # Maven / Gradle build output
 /target/
 target/
+backend/target/
 
 # Frontend dependencies and build output
 frontend/node_modules/

@@ -30,7 +30,7 @@ function Navbar() {
         <Link to={userLoggedIn ? '/home' : '/'} className="navbar-brand app-brand">
           <img
             className="navbar-brand-icon"
-            src="/app/appointment-icon.png"
+            src={`${import.meta.env.BASE_URL}appointment-icon.png`}
             alt=""
             aria-hidden="true"
             onError={(event) => {

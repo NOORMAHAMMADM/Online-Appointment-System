@@ -50,7 +50,7 @@ public class WebConfig implements WebMvcConfigurer {
                 .filter(origin -> !origin.isEmpty())
                 .toList();
 
-        config.setAllowedOrigins(origins);
+        config.setAllowedOriginPatterns(origins);
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("Authorization", "Cache-Control", "Content-Type"));
         config.setAllowCredentials(true);

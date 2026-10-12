@@ -50,8 +50,13 @@ function App() {
         localStorage.getItem('token'),
     )
 
+  const routerBase =
+    import.meta.env.VITE_ROUTER_BASE !== undefined
+      ? import.meta.env.VITE_ROUTER_BASE
+      : import.meta.env.BASE_URL.replace(/\/$/, '') || undefined
+
   return (
-    <BrowserRouter basename="/app">
+    <BrowserRouter basename={routerBase}>
       <Navbar />
 
       <Routes>
