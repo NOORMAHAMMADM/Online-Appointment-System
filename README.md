@@ -124,3 +124,8 @@ Do not commit real secrets or live credentials to source control.
 4. Add Environment Variables in Vercel:
    - `VITE_API_BASE_URL`: `https://<your-render-backend-service>.onrender.com`
 5. Deploy! Vercel handles SPA rewrites, assets, and includes `@vercel/analytics` and `@vercel/speed-insights`.
+
+## Author
+
+- **NOORMAHAMMADM** ([@NOORMAHAMMADM](https://github.com/NOORMAHAMMADM))
+
